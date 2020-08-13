@@ -1,2 +1,2 @@
-# picture-fade-in
+# Picture Fade In
 GitHub Pages
