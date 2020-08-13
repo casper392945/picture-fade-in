@@ -746,3 +746,19 @@ a {
     padding: 0 2rem;
   }
 }
+.cid-s7wk7OToeR {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+@media (max-width: 991px) {
+  .cid-s7wk7OToeR .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-s7wk7OToeR .row {
+  flex-direction: row-reverse;
+}
+.cid-s7wk7OToeR img {
+  width: 100%;
+}
