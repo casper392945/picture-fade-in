@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Picture fade in",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Open Sans",
+        "display1Size": "3.2",
+        "display2Font": "Open Sans",
+        "display2Size": 3,
+        "display5Font": "Open Sans",
+        "display5Size": 2.2,
+        "display7Font": "Open Sans",
+        "display7Size": 1.2,
+        "display4Font": "Open Sans",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.0.23",
+    "siteFonts": [
+      {
+        "css": "'Open Sans', sans-serif",
+        "name": "Open Sans",
+        "url": "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+      }
+    ],
+    "imageResize": true,
+    "favicon": false,
+    "cssOptimize": false,
+    "lazyLoad": false,
+    "lazyType": "nothing",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "pwa-switcher": false,
+    "uniqCompNum": 8,
+    "versionPublish": "5.0.23"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Picture fade in",
+        "meta_descr": "Picture fade in",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/sq4.jpg"
+      },
+      "components": [
+        {
+          "alias": "animated-on-scroll/components",
+          "_isSecondary": true,
+          "typeCompatible": "type",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".row": {
+              "align-items": "center"
+            },
+            ".image-wrapper": {
+              "@media (max-width: 991px)": {
+                "padding": "1rem"
+              }
+            },
+            ".text-wrapper": {
+              "@media (min-width: 992px)": {
+                "padding": "0 2rem"
+              }
+            }
+          },
+          "_name": "aosHeader11",
+          "_customHTML": "<section class=\"aosHeader11\" group=\"Animated on Scroll\" plugins=\"aos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n  'mbr-fullscreen': fullScreen,\n  'mbr-parallax-background': bg.parallax}\">\n\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n    <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <header>Animation</header>\n    <select title=\"Type\" name=\"aosData\">\n      <option value=\"fade\" selected>fade</option>\n      <option value=\"fade-up\">fade-up</option>\n      <option value=\"fade-down\">fade-down</option>\n      <option value=\"fade-left\">fade-left</option>\n      <option value=\"fade-right\">fade-right</option>\n      <option value=\"fade-up-right\">fade-up-right</option>\n      <option value=\"fade-up-left\">fade-up-left</option>\n      <option value=\"fade-down-right\">fade-down-right</option>\n      <option value=\"fade-down-left\">fade-down-left</option>\n      <option value=\"flip-up\">flip-up</option>\n      <option value=\"flip-down\">flip-down</option>\n      <option value=\"flip-left\">flip-left</option>\n      <option value=\"flip-right\">flip-right</option>\n      <option value=\"slide-up\">slide-up</option>\n      <option value=\"slide-down\">slide-down</option>\n      <option value=\"slide-left\">slide-left</option>\n      <option value=\"slide-right\">slide-right</option>\n      <option value=\"zoom-in\">zoom-in</option>\n      <option value=\"zoom-in-up\">zoom-in-up</option>\n      <option value=\"zoom-in-down\">zoom-in-down</option>\n      <option value=\"zoom-in-left\">zoom-in-left</option>\n      <option value=\"zoom-in-right\">zoom-in-right</option>\n      <option value=\"zoom-out\">zoom-out</option>\n      <option value=\"zoom-out-up\">zoom-out-up</option>\n      <option value=\"zoom-out-down\">zoom-out-down</option>\n      <option value=\"zoom-out-left\">zoom-out-left</option>\n      <option value=\"zoom-out-right\">zoom-out-right</option>\n    </select>\n    <select title=\"Easing\" name=\"aosEasing\">\n      <option value=\"linear\">linear</option>\n      <option value=\"ease\" selected>ease</option>\n      <option value=\"ease-in\">ease-in</option>\n      <option value=\"ease-out\">ease-out</option>\n      <option value=\"ease-in-out\">ease-in-out</option>\n      <option value=\"ease-in-back\">ease-in-back</option>\n      <option value=\"ease-out-back\">ease-out-back</option>\n      <option value=\"ease-in-out-back\">ease-in-out-back</option>\n      <option value=\"ease-in-sine\">ease-in-sine</option>\n      <option value=\"ease-out-sine\">ease-out-sine</option>\n      <option value=\"ease-in-out-sine\">ease-in-out-sine</option>\n      <option value=\"ease-in-quad\">ease-in-quad</option>\n      <option value=\"ease-out-quad\">ease-out-quad</option>\n      <option value=\"ease-in-out-quad\">ease-in-out-quad</option>\n      <option value=\"ease-in-cubic\">ease-in-cubic</option>\n      <option value=\"ease-out-cubic\">ease-out-cubic</option>\n      <option value=\"ease-in-out-cubic\">ease-in-out-cubic</option>\n      <option value=\"ease-in-quart\">ease-in-quart</option>\n      <option value=\"ease-out-quart\">ease-out-quart</option>\n      <option value=\"ease-in-out-quart\">ease-in-out-quart</option>\n    </select>\n    <select title=\"Anchor\" name=\"aosAnchor\">\n      <option value=\"top-bottom\">top-bottom</option>\n      <option value=\"top-center\">top-center</option>\n      <option value=\"top-top\">top-top</option>\n      <option value=\"center-bottom\">center-bottom</option>\n      <option value=\"center-center\">center-center</option>\n      <option value=\"center-top\">center-top</option>\n      <option value=\"bottom-bottom\">bottom-bottom</option>\n      <option value=\"bottom-center\">bottom-center</option>\n      <option value=\"bottom-top\">bottom-top</option>\n    </select>\n    <input type=\"range\" title=\"Offset\" name=\"aosOffset\" min=\"0\" max=\"480\" step=\"10\" value=\"0\">\n    <input type=\"range\" title=\"Delay\" name=\"aosDelay\" min=\"0\" max=\"3000\" step=\"50\" value=\"1000\">\n    <input type=\"range\" title=\"Duration\" name=\"aosDuration\" min=\"0\" max=\"3000\" step=\"50\" value=\"3000\">\n    <input type=\"checkbox\" title=\"Once\" name=\"aosOnce\">\n    <input type=\"checkbox\" title=\"Mirror\" name=\"aosMirror\" checked>\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background07.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#ffb5b5\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 col-md-{{imageWidth}} image-wrapper\" data-aos=\"{{aosData}}\" data-aos-offset=\"{{aosOffset}}\" data-aos-delay=\"{{aosDelay}}\" data-aos-duration=\"{{aosDuration}}\" data-aos-easing=\"{{aosEasing}}\" data-aos-once=\"{{aosOnce}}\" data-aos-mirror=\"{{aosMirror}}\" data-aos-anchor-placement=\"{{aosAnchor}}\">\n        <img class=\"w-100\" src=\"../_images/square/sq4.jpg\" alt=\"Mobirise\">\n      </div>\n      <div class=\"col-12 col-md\">\n        <div class=\"text-wrapper text-center\">\n          <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n            <b>Picture fade in</b></h1>\n          <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n            Make awesome landing pages without coding!</p>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Get Started</a></div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "s7waToMMH0",
+          "_anchor": "aosHeader11-1",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_customHTML": "<section class=\"image3\" group=\"Images\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/carbon-968x1545.png\" alt=\"Mobirise\" title>\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s7wk7OToeR",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image3-7"
+        }
+      ]
+    }
+  }
+}
